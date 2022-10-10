@@ -3,5 +3,9 @@
 {{ endblock }}
 
 {{ block content }}
+	<p>In total, all players contributed {{ group.total }} into the group account.</p>
+	<p>You contributed {{ player.contribution }} and you earned {{ player.payoff }}.</p>
 	{{ next_button }}
+	<p>Partner 1 contributed {{ others_contributions.0 }} and earned {{ others_payoffs.0 }}</p>
+	<p>Partner 2 contributed {{ others_contributions.1 }} and earned {{ others_payoffs.1 }}</p>
 {{ endblock }}
